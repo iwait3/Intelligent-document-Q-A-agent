@@ -1,0 +1,10 @@
+# 环境变量（含 API Key，绝不提交）
+.env
+
+# 向量数据库（可重新生成）
+data/faiss_index/
+
+# Python
+__pycache__/
+*.pyc
+.venv/

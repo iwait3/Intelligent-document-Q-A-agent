@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  smartdoc:
+    build: .
+    ports:
+      - "8501:8501"
+    environment:
+      - ZHIPU_API_KEY=${ZHIPU_API_KEY}
+    volumes:
+      # 持久化数据：文档和向量库不会因容器重启丢失
+      - smartdoc_data:/app/data
+    restart: unless-stopped
+
+volumes:
+  smartdoc_data:
