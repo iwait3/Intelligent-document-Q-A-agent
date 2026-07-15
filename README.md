@@ -399,7 +399,7 @@ HF_ENDPOINT=https://hf-mirror.com
 
 ```bash
 cd smartdoc
-HF_ENDPOINT=https://hf-mirror.com streamlit run app.py --server.port 8501 --server.headless true
+set HF_ENDPOINT=https://hf-mirror.com && streamlit run app.py --server.port 8501 --server.headless true
 ```
 
 浏览器访问 `http://localhost:8501` 即可使用。
